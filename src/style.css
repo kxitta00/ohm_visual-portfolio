@@ -504,6 +504,53 @@ a {
 
 /* Footer  */
 
+/* lightbox */
+.lightbox {
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+  background-color: rgba(0, 0, 0, 0.92);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+}
+
+.lightbox.is-open {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.lightbox-img {
+  max-width: 90vw;
+  max-height: 85vh;
+  object-fit: contain;
+}
+
+.lightbox button {
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  line-height: 1;
+  font-size: 2rem;
+  background-color: transparent;
+  border: none;
+  color: #FFFFFF;
+  cursor: pointer;
+  padding: 8px;
+  border-radius: 4px;
+  margin-right: 4px;
+  transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+.lightbox-close:hover {
+  opacity: 0.7;
+  transform: scale(1.1);
+}
+
+/* lightbox */
 @media (min-width: 768px) {
   .header-container {
     padding: 24px 80px;
@@ -657,7 +704,11 @@ a {
   }
 
   .footer-container {
-    padding: 20px 0px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    text-align: left;
+    padding: 24px 0px;
   }
 
   .footer-copy {
