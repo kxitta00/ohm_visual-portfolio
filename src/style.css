@@ -481,8 +481,13 @@ a {
 /* Contact */
 /* --- Main */
 /* Footer  */
-.footer-container {
+
+footer {
   border-top: 1px solid var(--border-light);
+  width: 100%;
+}
+
+.footer-container {
   display: flex;
   flex-direction: column;
   text-align: center;
@@ -549,6 +554,8 @@ a {
   opacity: 0.7;
   transform: scale(1.1);
 }
+
+
 
 /* lightbox */
 @media (min-width: 768px) {
@@ -708,7 +715,7 @@ a {
     justify-content: space-between;
     align-items: center;
     text-align: left;
-    padding: 24px 0px;
+    padding: 24px 80px
   }
 
   .footer-copy {
