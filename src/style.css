@@ -339,9 +339,101 @@ a {
   border-color: var(--text-primary);
 }
 
-
-
 /* Pricing */
+/* About */
+.about {
+  background-color: #F7F7F5;
+  padding: 64px 0 96px;
+}
+
+.about-container {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  align-items: center;
+}
+
+.about-img {
+  aspect-ratio: 4/5;
+  position: relative;
+  overflow: hidden;
+  border-radius: 4px;
+  max-width: 460px;
+}
+
+.about-img img {
+  display: block;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.about-badge {
+  letter-spacing: 2px;
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(6px);
+  color: var(--text-muted);
+  font-size: 0.75rem;
+  padding: 4px 10px;
+  position: absolute;
+  bottom: 14px;
+  left: 16px;
+  border-radius: 2px;
+}
+
+.about-content {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding: 0px 4px;
+}
+
+
+.about-title {
+  font-size: 2rem;
+  color: var(--text-primary);
+}
+
+.about-desc {
+  font-size: 0.95rem;
+  font-weight: 100;
+}
+
+.equipment-title {
+  font-size: 0.75rem;
+  font-weight: 100;
+  border-bottom: 1px solid var(--border-light);
+  padding-bottom: 8px;
+  letter-spacing: 2px;
+}
+
+.equipment-list {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.equipment-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid var(--border-light);
+  margin-bottom: 4px;
+  padding: 12px 0;
+}
+
+.equipment-label {
+  font-weight: 300;
+  margin-bottom: 4px;
+  color: var(--text-primary);
+}
+
+.equipment-value {
+  font-weight: 300;
+  color: var(--text-primary);
+}
+
+/* About */
 /* --- Main */
 
 @media (min-width: 768px) {
@@ -447,6 +539,30 @@ a {
 
   .pricing-grid {
     grid-template-columns: repeat(3, 1fr);
+  }
+
+  .about-container {
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 80px;
+    padding: 40px 140px;
+  }
+
+
+  .equipment-row {
+    padding: 4px 0;
+  }
+
+  .about-title {
+    font-size: 2.75rem;
+  }
+
+  .about-desc {
+    font-size: 1.1rem;
+  }
+
+  .equipment-title {
+    font-size: 0.75rem;
   }
 }
 
