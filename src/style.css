@@ -265,6 +265,83 @@ a {
 }
 
 /* Works */
+/* Pricing */
+.pricing {
+  background-color: var(--bg-primary);
+  padding: 64px 0 96px;
+}
+
+.pricing-container {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.pricing-header {
+  margin-bottom: 24px;
+}
+
+.pricing-title {
+  font-size: 1.5rem;
+  color: var(--text-primary);
+  margin-bottom: 8px;
+}
+
+.pricing-desc {
+  font-size: 0.75rem;
+}
+
+.pricing-grid {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 16px;
+}
+
+.pricing-card {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  padding: 40px 28px;
+  border: 1px solid var(--border-light);
+  border-radius: 4px;
+  gap: 14px;
+  transition: 0.3s ease;
+}
+
+.pricing-card:hover {
+  border-color: var(--text-muted);
+}
+
+.pricing-card-catagory-eng {
+  font-size: 0.75rem;
+  letter-spacing: 2px;
+  color: var(--text-muted);
+}
+
+.pricing-card-catagory-th {
+  font-size: 1.25rem;
+  color: var(--text-primary);
+  font-weight: 100;
+}
+
+.pricing-card-price {
+  font-size: 2rem;
+  color: var(--text-primary);
+}
+
+.pricing-card-desc {
+  line-height: 1.8;
+  font-size: 0.75rem;
+  color: var(--text-muted);
+}
+
+.p_card-02 {
+  border-color: var(--text-primary);
+}
+
+
+
+/* Pricing */
 /* --- Main */
 
 @media (min-width: 768px) {
@@ -328,7 +405,47 @@ a {
     padding: 16px 36px;
   }
 
+  .works {
+    margin-top: 12px;
+    padding: 120px 0 96px;
+  }
+
+  .works-container {
+    padding: 0px 160px;
+  }
+
   .grid-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .works-title {
+    font-size: 2.2rem;
+
+  }
+
+  .works-desc {
+    font-size: 0.95rem;
+  }
+
+  .pricing {
+    margin-top: 12px;
+    padding: 120px 0 96px;
+  }
+
+  .pricing-container {
+    padding: 0px 140px;
+  }
+
+  .pricing-title {
+    font-size: 2.2rem;
+  }
+
+  .pricing-desc {
+    font-size: 1rem;
+    font-weight: 100;
+  }
+
+  .pricing-grid {
     grid-template-columns: repeat(3, 1fr);
   }
 }
@@ -337,6 +454,5 @@ a {
   .hero-container {
     gap: 160px;
   }
-
 
 }
