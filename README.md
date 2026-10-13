@@ -1,7 +1,7 @@
 # OHM VISUAL — Photography Portfolio
 
 **Live Website:** [ohm-visual-portfolio.vercel.app](https://ohm-visual-portfolio.vercel.app)
---
+---
 
 ## ที่มาของโปรเจกต์ (Motivation & Background)
 
@@ -43,3 +43,4 @@
 │   └── main.ts      # Logic สำหรับเมนูมือถือ และ Lightbox Modal
 ├── index.html       # โครงสร้างหน้าเว็บ Semantic HTML5
 └── package.json
+```
