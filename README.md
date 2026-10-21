@@ -31,7 +31,7 @@
 - **Runtime & Package Manager:** [Bun](https://bun.sh/)
 - **Build Tool & Dev Server:** [Vite](https://vitejs.dev/)
 - **Deployment:** [Vercel](https://vercel.com/)
-
+- **AI Assistance:** Gemini Flash 3.8 — ใช้ช่วยทบทวนแนวคิด ตรวจสอบ code smells และอธิบาย mental models
 ---
 
 ## โครงสร้างโปรเจกต์ (Project Structure)
